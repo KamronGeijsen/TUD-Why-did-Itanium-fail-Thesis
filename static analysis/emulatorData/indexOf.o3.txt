@@ -1,0 +1,67 @@
+
+
+o:     file format elf64-ia64-little
+
+
+
+
+
+Disassembly of section .text:
+
+
+
+0000000000000000 <_Z7indexOfPlil>:
+
+   0:	18 40 00 00 00 21 	[MMB]       mov r8=r0
+
+   6:	e0 f8 87 7e 46 00 	            adds r14=-1,r33
+
+   c:	00 00 00 20       	            nop.b 0x0
+
+  10:	11 38 00 42 86 31 	[MIB]       cmp4.lt p7,p6=0,r33
+
+  16:	20 00 04 65 00 03 	            mov.i r2=ar.lc
+
+  1c:	60 00 00 43       	      (p06) br.cond.dpnt.few 70 <_Z7indexOfPlil+0x70>;;
+
+  20:	03 70 38 00 08 20 	[MII]       addp4 r14=r14,r0
+
+  26:	00 00 00 02 00 00 	            nop.i 0x0;;
+
+  2c:	e0 08 aa 00       	            mov.i ar.lc=r14;;
+
+  30:	08 00 00 00 01 00 	[MMI]       nop.m 0x0
+
+  36:	00 00 00 02 00 00 	            nop.m 0x0
+
+  3c:	00 00 04 00       	            nop.i 0x0
+
+  40:	09 70 00 40 18 10 	[MMI]       ld8 r14=[r32]
+
+  46:	00 00 00 02 00 00 	            nop.m 0x0
+
+  4c:	84 00 01 84       	            adds r32=8,r32;;
+
+  50:	11 30 88 1c 07 38 	[MIB]       cmp.eq p6,p7=r34,r14
+
+  56:	00 00 00 02 00 03 	            nop.i 0x0
+
+  5c:	30 00 00 43       	      (p06) br.cond.dpnt.few 80 <_Z7indexOfPlil+0x80>;;
+
+  60:	11 00 00 00 01 00 	[MIB]       nop.m 0x0
+
+  66:	80 08 20 00 42 a0 	            adds r8=1,r8
+
+  6c:	e0 ff ff 48       	            br.cloop.sptk.few 40 <_Z7indexOfPlil+0x40>;;
+
+  70:	08 40 fc f9 ff 27 	[MMI]       mov r8=-1
+
+  76:	00 00 00 02 00 00 	            nop.m 0x0
+
+  7c:	00 00 04 00       	            nop.i 0x0
+
+  80:	11 00 00 00 01 00 	[MIB]       nop.m 0x0
+
+  86:	00 10 04 55 00 80 	            mov.i ar.lc=r2
+
+  8c:	08 00 84 00       	            br.ret.sptk.many b0;;

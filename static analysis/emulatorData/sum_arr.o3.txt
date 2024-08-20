@@ -1,0 +1,55 @@
+
+
+o:     file format elf64-ia64-little
+
+
+
+
+
+Disassembly of section .text:
+
+
+
+0000000000000000 <_Z4fillPli>:
+
+   0:	09 40 00 00 00 21 	[MMI]       mov r8=r0
+
+   6:	70 00 84 0c 63 c0 	            cmp4.lt p7,p6=0,r33
+
+   c:	f1 0f fd 8c       	            adds r14=-1,r33;;
+
+  10:	10 00 00 00 01 80 	[MIB]       nop.m 0x0
+
+  16:	81 00 00 00 42 03 	      (p06) mov r8=r0
+
+  1c:	50 00 00 43       	      (p06) br.cond.dpnt.few 60 <_Z4fillPli+0x60>
+
+  20:	09 70 38 00 08 20 	[MMI]       addp4 r14=r14,r0
+
+  26:	00 00 00 02 00 e0 	            nop.m 0x0
+
+  2c:	81 00 01 84       	            adds r15=8,r32;;
+
+  30:	03 70 38 00 12 20 	[MII]       shladd r14=r14,3,r0
+
+  36:	00 00 00 02 00 e0 	            nop.i 0x0;;
+
+  3c:	e1 78 00 80       	            add r15=r14,r15;;
+
+  40:	09 70 00 40 18 10 	[MMI]       ld8 r14=[r32]
+
+  46:	00 00 00 02 00 00 	            nop.m 0x0
+
+  4c:	84 00 01 84       	            adds r32=8,r32;;
+
+  50:	10 40 20 1c 00 20 	[MIB]       add r8=r8,r14
+
+  56:	70 00 3d 0c 70 03 	            cmp.eq p7,p6=r32,r15
+
+  5c:	f0 ff ff 4a       	      (p06) br.cond.dptk.few 40 <_Z4fillPli+0x40>
+
+  60:	11 00 00 00 01 00 	[MIB]       nop.m 0x0
+
+  66:	00 00 00 02 00 80 	            nop.i 0x0
+
+  6c:	08 00 84 00       	            br.ret.sptk.many b0;;

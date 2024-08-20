@@ -1,0 +1,156 @@
+
+o:     file format elf64-ia64-little
+
+
+Disassembly of section .text:
+
+0000000000000000 <_Z4swapRiS_>:
+   0:	09 70 00 40 10 10 	[MMI]       ld4 r14=[r32]
+   6:	f0 00 84 20 20 00 	            ld4 r15=[r33]
+   c:	00 00 04 00       	            nop.i 0x0;;
+  10:	08 00 00 00 01 00 	[MMI]       nop.m 0x0
+  16:	00 78 80 20 23 00 	            st4 [r32]=r15
+  1c:	00 00 04 00       	            nop.i 0x0
+  20:	19 00 38 42 90 11 	[MMB]       st4 [r33]=r14
+  26:	00 00 00 02 00 80 	            nop.m 0x0
+  2c:	08 00 84 00       	            br.ret.sptk.many b0;;
+  30:	08 00 00 00 01 00 	[MMI]       nop.m 0x0
+  36:	00 00 00 02 00 00 	            nop.m 0x0
+  3c:	00 00 04 00       	            nop.i 0x0
+
+0000000000000040 <_Z9partitionPiii>:
+  40:	08 30 88 42 87 30 	[MMI]       cmp4.lt p6,p7=r34,r33
+  46:	f0 10 85 0a 40 40 	            sub r15=r34,r33
+  4c:	04 10 59 00       	            sxt4 r34=r34
+  50:	09 80 fc 43 3f 23 	[MMI]       adds r16=-1,r33
+  56:	10 21 80 00 42 40 	            adds r17=4,r32
+  5c:	02 08 59 00       	            sxt4 r18=r33;;
+  60:	08 10 89 00 11 20 	[MMI]       shladd r34=r34,2,r0
+  66:	00 00 00 02 00 e0 	            nop.m 0x0
+  6c:	f1 00 20 80       	            addp4 r15=r15,r0
+  70:	09 70 48 00 11 20 	[MMI]       shladd r14=r18,2,r0
+  76:	00 00 00 02 00 03 	            nop.m 0x0
+  7c:	01 08 01 84       	      (p06) mov r8=r33;;
+  80:	09 10 81 44 00 20 	[MMI]       add r34=r32,r34
+  86:	f0 78 48 00 40 c0 	            add r15=r15,r18
+  8c:	01 72 00 80       	            add r14=r32,r14;;
+  90:	11 a8 00 44 10 10 	[MIB]       ld4 r21=[r34]
+  96:	f0 78 00 22 40 03 	            shladd r15=r15,2,r0
+  9c:	a0 00 00 43       	      (p06) br.cond.dpnt.few 130 <_Z9partitionPiii+0xf0>;;
+  a0:	09 00 00 00 01 00 	[MMI]       nop.m 0x0
+  a6:	20 79 44 00 40 80 	            add r18=r15,r17
+  ac:	22 80 00 84       	            adds r20=2,r16;;
+  b0:	08 00 00 00 01 00 	[MMI]       nop.m 0x0
+  b6:	00 00 00 02 00 00 	            nop.m 0x0
+  bc:	00 00 04 00       	            nop.i 0x0
+  c0:	09 88 00 1c 10 10 	[MMI]       ld4 r17=[r14]
+  c6:	80 08 40 00 42 c0 	            adds r8=1,r16
+  cc:	41 70 00 84       	            adds r14=4,r14;;
+  d0:	01 38 44 2a 86 30 	[MII]       cmp4.lt p7,p6=r17,r21
+  d6:	f0 00 20 2c 00 60 	            sxt4 r15=r8
+  dc:	c2 77 fc 8c       	            adds r19=-4,r14;;
+  e0:	e9 78 3c 00 11 e0 	[MMI] (p07) shladd r15=r15,2,r0
+  e6:	01 01 20 00 c2 03 	      (p07) mov r16=r8
+  ec:	01 a0 00 84       	      (p07) mov r8=r20;;
+  f0:	ea 78 80 1e 00 e0 	[MMI] (p07) add r15=r32,r15;;
+  f6:	41 01 3c 20 20 00 	      (p07) ld4 r20=[r15]
+  fc:	00 00 04 00       	            nop.i 0x0
+ 100:	ea 00 44 1e 90 d1 	[MMI] (p07) st4 [r15]=r17;;
+ 106:	01 a0 4c 20 23 80 	      (p07) st4 [r19]=r20
+ 10c:	22 80 00 84       	            adds r20=2,r16
+ 110:	18 00 00 00 01 00 	[MMB]       nop.m 0x0
+ 116:	70 70 48 0c 70 03 	            cmp.eq p7,p6=r14,r18
+ 11c:	b0 ff ff 4a       	      (p06) br.cond.dptk.few c0 <_Z9partitionPiii+0x80>
+ 120:	08 a8 00 44 10 10 	[MMI]       ld4 r21=[r34]
+ 126:	00 00 00 02 00 00 	            nop.m 0x0
+ 12c:	00 00 04 00       	            nop.i 0x0
+ 130:	03 00 00 00 01 00 	[MII]       nop.m 0x0
+ 136:	00 01 40 2c 00 00 	            sxt4 r16=r16;;
+ 13c:	12 80 00 84       	            adds r16=1,r16;;
+ 140:	0b 80 40 00 11 20 	[MMI]       shladd r16=r16,2,r0;;
+ 146:	00 01 41 00 40 00 	            add r16=r32,r16
+ 14c:	00 00 04 00       	            nop.i 0x0;;
+ 150:	09 70 00 20 10 10 	[MMI]       ld4 r14=[r16]
+ 156:	00 a8 40 20 23 00 	            st4 [r16]=r21
+ 15c:	00 00 04 00       	            nop.i 0x0;;
+ 160:	11 00 38 44 90 11 	[MIB]       st4 [r34]=r14
+ 166:	00 00 00 02 00 80 	            nop.i 0x0
+ 16c:	08 00 84 00       	            br.ret.sptk.many b0;;
+ 170:	08 00 00 00 01 00 	[MMI]       nop.m 0x0
+ 176:	00 00 00 02 00 00 	            nop.m 0x0
+ 17c:	00 00 04 00       	            nop.i 0x0
+
+0000000000000180 <_Z9quickSortPiii>:
+ 180:	08 30 2d 10 80 05 	[MMI]       alloc r38=ar.pfs,11,8,0
+ 186:	90 02 84 00 42 a0 	            mov r41=r33
+ 18c:	04 00 c4 00       	            mov r37=b0
+ 190:	09 38 01 02 00 21 	[MMI]       mov r39=r1
+ 196:	70 08 89 0c 61 80 	            cmp4.lt p7,p6=r33,r34
+ 19c:	04 10 59 00       	            sxt4 r36=r34;;
+ 1a0:	11 00 00 00 01 00 	[MIB]       nop.m 0x0
+ 1a6:	00 00 00 02 00 03 	            nop.i 0x0
+ 1ac:	40 01 00 43       	      (p06) br.cond.dpnt.few 2e0 <_Z9quickSortPiii+0x160>;;
+ 1b0:	03 20 91 00 11 20 	[MII]       shladd r36=r36,2,r0
+ 1b6:	00 00 00 02 00 80 	            nop.i 0x0;;
+ 1bc:	04 22 01 80       	            add r36=r32,r36;;
+ 1c0:	10 00 00 00 01 00 	[MIB]       nop.m 0x0
+ 1c6:	e0 00 a4 2c 00 00 	            sxt4 r14=r41
+ 1cc:	00 00 00 20       	            nop.b 0x0
+ 1d0:	09 80 00 52 00 21 	[MMI]       mov r16=r41
+ 1d6:	40 01 90 20 20 60 	            ld4 r20=[r36]
+ 1dc:	f4 4f fd 8c       	            adds r35=-1,r41;;
+ 1e0:	03 70 38 00 11 20 	[MII]       shladd r14=r14,2,r0
+ 1e6:	00 09 40 00 42 c0 	            adds r16=1,r16;;
+ 1ec:	01 72 00 80       	            add r14=r32,r14;;
+ 1f0:	08 00 00 00 01 00 	[MMI]       nop.m 0x0
+ 1f6:	00 00 00 02 00 00 	            nop.m 0x0
+ 1fc:	00 00 04 00       	            nop.i 0x0
+ 200:	09 88 00 1c 10 10 	[MMI]       ld4 r17=[r14]
+ 206:	00 00 00 02 00 c0 	            nop.m 0x0
+ 20c:	41 70 00 84       	            adds r14=4,r14;;
+ 210:	03 38 44 28 86 30 	[MII]       cmp4.lt p7,p6=r17,r20
+ 216:	20 e1 3b 7e c6 63 	            adds r18=-4,r14;;
+ 21c:	14 18 01 84       	      (p07) adds r35=1,r35;;
+ 220:	03 00 00 00 01 c0 	[MII]       nop.m 0x0
+ 226:	f1 00 8c 2c 80 e3 	      (p07) sxt4 r15=r35;;
+ 22c:	f1 00 44 80       	      (p07) shladd r15=r15,2,r0;;
+ 230:	ea 78 80 1e 00 e0 	[MMI] (p07) add r15=r32,r15;;
+ 236:	31 01 3c 20 20 00 	      (p07) ld4 r19=[r15]
+ 23c:	00 00 04 00       	            nop.i 0x0
+ 240:	ea 00 44 1e 90 d1 	[MMI] (p07) st4 [r15]=r17;;
+ 246:	01 98 48 20 23 e0 	      (p07) st4 [r18]=r19
+ 24c:	20 82 18 c2       	            cmp4.lt p7,p6=r34,r16
+ 250:	19 00 00 00 01 00 	[MMB]       nop.m 0x0
+ 256:	00 09 40 00 42 03 	            adds r16=1,r16
+ 25c:	b0 ff ff 4a       	      (p06) br.cond.dptk.few 200 <_Z9quickSortPiii+0x80>;;
+ 260:	10 00 00 00 01 00 	[MIB]       nop.m 0x0
+ 266:	e0 00 8c 2c 00 00 	            sxt4 r14=r35
+ 26c:	00 00 00 20       	            nop.b 0x0
+ 270:	09 80 00 48 10 10 	[MMI]       ld4 r16=[r36]
+ 276:	a0 02 8c 00 42 00 	            mov r42=r35
+ 27c:	05 00 01 84       	            mov r40=r32;;
+ 280:	0b 70 04 1c 00 21 	[MMI]       adds r14=1,r14;;
+ 286:	e0 70 00 22 40 00 	            shladd r14=r14,2,r0
+ 28c:	00 00 04 00       	            nop.i 0x0;;
+ 290:	09 00 00 00 01 00 	[MMI]       nop.m 0x0
+ 296:	e0 00 39 00 40 00 	            add r14=r32,r14
+ 29c:	00 00 04 00       	            nop.i 0x0;;
+ 2a0:	09 78 00 1c 10 10 	[MMI]       ld4 r15=[r14]
+ 2a6:	00 80 38 20 23 00 	            st4 [r14]=r16
+ 2ac:	00 00 04 00       	            nop.i 0x0;;
+ 2b0:	11 00 3c 48 90 11 	[MIB]       st4 [r36]=r15
+ 2b6:	00 00 00 02 00 00 	            nop.i 0x0
+ 2bc:	08 00 00 50       	            br.call.sptk.many b0=2b0 <_Z9quickSortPiii+0x130>;;
+ 2c0:	09 48 09 46 00 21 	[MMI]       adds r41=2,r35
+ 2c6:	00 00 00 02 00 20 	            nop.m 0x0
+ 2cc:	00 38 01 84       	            mov r1=r39;;
+ 2d0:	10 00 00 00 01 00 	[MIB]       nop.m 0x0
+ 2d6:	60 48 89 0e 61 03 	            cmp4.lt p6,p7=r41,r34
+ 2dc:	f0 fe ff 4a       	      (p06) br.cond.dptk.few 1c0 <_Z9quickSortPiii+0x40>
+ 2e0:	01 00 00 00 01 00 	[MII]       nop.m 0x0
+ 2e6:	00 30 01 55 00 00 	            mov.i ar.pfs=r38
+ 2ec:	00 00 04 00       	            nop.i 0x0;;
+ 2f0:	11 00 00 00 01 00 	[MIB]       nop.m 0x0
+ 2f6:	00 28 05 80 03 80 	            mov b0=r37
+ 2fc:	08 00 84 00       	            br.ret.sptk.many b0;;
+ 

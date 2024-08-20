@@ -1,0 +1,301 @@
+
+
+o:     file format elf64-ia64-little
+
+
+
+
+
+Disassembly of section .text:
+
+
+
+0000000000000000 <_Z6memCpyPvS_i>:
+
+   0:	08 80 14 06 80 05 	[MMI]       alloc r16=ar.pfs,5,3,0
+
+   6:	40 f9 8b 7e 46 20 	            adds r20=-1,r34
+
+   c:	12 02 39 80       	            or r17=r33,r32
+
+  10:	09 70 00 40 00 21 	[MMI]       mov r14=r32
+
+  16:	f0 00 84 00 42 20 	            mov r15=r33
+
+  1c:	01 10 21 c6       	            cmp4.lt p9,p8=0,r34;;
+
+  20:	08 80 1c 42 00 21 	[MMI]       adds r16=7,r33
+
+  26:	00 00 00 02 00 40 	            nop.m 0x0
+
+  2c:	62 10 71 52       	            extr.u r18=r34,3,29
+
+  30:	09 88 1c 22 2c 20 	[MMI]       and r17=7,r17
+
+  36:	00 00 00 02 00 c0 	            nop.m 0x0
+
+  3c:	90 a0 1c d6       	            cmp4.ltu p6,p7=9,r20;;
+
+  40:	08 80 40 40 05 20 	[MMI]       sub r16=r16,r32
+
+  46:	20 91 00 24 40 40 	            shladd r18=r18,3,r0
+
+  4c:	00 08 ca 00       	            mov.i r2=ar.lc
+
+  50:	09 50 00 22 0b 39 	[MMI]       cmp.eq p10,p11=0,r17
+
+  56:	00 00 00 02 00 63 	            nop.m 0x0
+
+  5c:	12 00 00 90       	      (p06) mov r19=1;;
+
+  60:	68 89 00 00 00 21 	[MMI] (p11) mov r17=r0
+
+  66:	20 c1 4b 7e 46 00 	            adds r18=-8,r18
+
+  6c:	00 00 04 00       	            nop.i 0x0
+
+  70:	f9 98 00 00 00 21 	[MMB] (p07) mov r19=r0
+
+  76:	60 70 40 0e 6a 04 	            cmp.ltu p6,p7=14,r16
+
+  7c:	20 02 00 43       	      (p08) br.cond.dpnt.few 290 <_Z6memCpyPvS_i+0x290>;;
+
+  80:	41 89 00 26 00 21 	[MII] (p10) mov r17=r19
+
+  86:	20 31 48 78 a9 03 	            shr.u r18=r18,3
+
+  8c:	02 00 00 84       	      (p07) mov r16=r0;;
+
+  90:	09 00 00 00 01 80 	[MMI]       nop.m 0x0
+
+  96:	01 01 44 00 42 00 	      (p06) mov r16=r17
+
+  9c:	00 00 04 00       	            nop.i 0x0;;
+
+  a0:	10 00 00 00 01 00 	[MIB]       nop.m 0x0
+
+  a6:	60 00 40 0e 73 03 	            cmp4.eq p6,p7=0,r16
+
+  ac:	00 02 00 43       	      (p06) br.cond.dpnt.few 2a0 <_Z6memCpyPvS_i+0x2a0>
+
+  b0:	01 00 00 00 01 00 	[MII]       nop.m 0x0
+
+  b6:	00 90 04 55 00 00 	            mov.i ar.lc=r18
+
+  bc:	00 00 04 00       	            nop.i 0x0;;
+
+  c0:	09 80 00 1e 18 10 	[MMI]       ld8 r16=[r15]
+
+  c6:	00 00 00 02 00 e0 	            nop.m 0x0
+
+  cc:	81 78 00 84       	            adds r15=8,r15;;
+
+  d0:	11 00 40 1c 98 11 	[MIB]       st8 [r14]=r16
+
+  d6:	e0 40 38 00 42 a0 	            adds r14=8,r14
+
+  dc:	f0 ff ff 48       	            br.cloop.sptk.few c0 <_Z6memCpyPvS_i+0xc0>;;
+
+  e0:	09 00 00 00 01 00 	[MMI]       nop.m 0x0
+
+  e6:	e0 c0 8b 58 44 00 	            and r14=-8,r34
+
+  ec:	00 00 04 00       	            nop.i 0x0;;
+
+  f0:	08 98 04 1c 00 21 	[MMI]       adds r19=1,r14
+
+  f6:	50 11 38 00 42 e0 	            adds r21=2,r14
+
+  fc:	32 70 00 84       	            adds r23=3,r14
+
+ 100:	09 c0 10 1c 00 21 	[MMI]       adds r24=4,r14
+
+ 106:	90 29 38 00 42 e0 	            adds r25=5,r14
+
+ 10c:	e1 00 20 80       	            addp4 r15=r14,r0;;
+
+ 110:	00 00 00 00 01 00 	[MII]       nop.m 0x0
+
+ 116:	00 01 4c 2c 00 20 	            sxt4 r16=r19
+
+ 11c:	02 a8 58 00       	            sxt4 r17=r21
+
+ 120:	19 d0 18 1c 00 21 	[MMB]       adds r26=6,r14
+
+ 126:	c0 09 3d 00 40 00 	            add r28=r33,r15
+
+ 12c:	00 00 00 20       	            nop.b 0x0;;
+
+ 130:	08 78 80 1e 00 20 	[MMI]       add r15=r32,r15
+
+ 136:	d0 09 41 00 40 40 	            add r29=r33,r16
+
+ 13c:	02 b8 58 00       	            sxt4 r18=r23
+
+ 140:	09 80 80 20 00 20 	[MMI]       add r16=r32,r16
+
+ 146:	e0 09 45 00 40 80 	            add r30=r33,r17
+
+ 14c:	02 c0 58 00       	            sxt4 r20=r24;;
+
+ 150:	08 88 80 22 00 20 	[MMI]       add r17=r32,r17
+
+ 156:	f0 09 49 00 40 c0 	            add r31=r33,r18
+
+ 15c:	02 c8 58 00       	            sxt4 r22=r25
+
+ 160:	09 90 80 24 00 20 	[MMI]       add r18=r32,r18
+
+ 166:	30 0a 51 00 40 80 	            add r35=r33,r20
+
+ 16c:	02 a2 00 80       	            add r20=r32,r20;;
+
+ 170:	08 20 85 2c 00 20 	[MMI]       add r36=r33,r22
+
+ 176:	60 01 59 00 40 60 	            add r22=r32,r22
+
+ 17c:	03 d0 58 00       	            sxt4 r27=r26
+
+ 180:	09 78 54 44 8e 30 	[MMI]       cmp4.lt p15,p14=r21,r34
+
+ 186:	d0 b8 88 18 61 60 	            cmp4.lt p13,p12=r23,r34
+
+ 18c:	81 11 29 c2       	            cmp4.lt p11,p10=r24,r34;;
+
+ 190:	08 08 85 36 00 20 	[MMI]       add r33=r33,r27
+
+ 196:	00 02 6d 00 40 20 	            add r32=r32,r27
+
+ 19c:	91 11 21 c2       	            cmp4.lt p9,p8=r25,r34
+
+ 1a0:	19 30 38 44 87 38 	[MMB]       cmp4.eq p6,p7=r14,r34
+
+ 1a6:	e0 00 70 40 20 03 	            ld1.s r14=[r28]
+
+ 1ac:	f0 00 00 43       	      (p06) br.cond.dpnt.few 290 <_Z6memCpyPvS_i+0x290>;;
+
+ 1b0:	08 00 00 00 01 00 	[MMI]       nop.m 0x0
+
+ 1b6:	70 98 88 0c 61 80 	            cmp4.lt p7,p6=r19,r34
+
+ 1bc:	e2 00 00 01       	            chk.s.i r14,2f0 <_Z6memCpyPvS_i+0x2f0>
+
+ 1c0:	11 00 38 1e 80 11 	[MIB]       st1 [r15]=r14
+
+ 1c6:	00 00 00 02 00 03 	            nop.i 0x0
+
+ 1cc:	d0 00 00 43       	      (p06) br.cond.dpnt.few 290 <_Z6memCpyPvS_i+0x290>;;
+
+ 1d0:	09 70 00 3a 00 10 	[MMI]       ld1 r14=[r29]
+
+ 1d6:	00 00 00 02 00 e0 	            nop.m 0x0
+
+ 1dc:	a0 11 19 c2       	            cmp4.lt p7,p6=r26,r34;;
+
+ 1e0:	11 00 38 20 80 11 	[MIB]       st1 [r16]=r14
+
+ 1e6:	00 00 00 02 00 07 	            nop.i 0x0
+
+ 1ec:	b0 00 00 43       	      (p14) br.cond.dpnt.few 290 <_Z6memCpyPvS_i+0x290>;;
+
+ 1f0:	09 00 00 00 01 00 	[MMI]       nop.m 0x0
+
+ 1f6:	e0 00 78 00 20 00 	            ld1 r14=[r30]
+
+ 1fc:	00 00 04 00       	            nop.i 0x0;;
+
+ 200:	11 00 38 22 80 11 	[MIB]       st1 [r17]=r14
+
+ 206:	00 00 00 02 00 06 	            nop.i 0x0
+
+ 20c:	90 00 00 43       	      (p12) br.cond.dpnt.few 290 <_Z6memCpyPvS_i+0x290>;;
+
+ 210:	09 00 00 00 01 00 	[MMI]       nop.m 0x0
+
+ 216:	e0 00 7c 00 20 00 	            ld1 r14=[r31]
+
+ 21c:	00 00 04 00       	            nop.i 0x0;;
+
+ 220:	11 00 38 24 80 11 	[MIB]       st1 [r18]=r14
+
+ 226:	00 00 00 02 00 05 	            nop.i 0x0
+
+ 22c:	70 00 00 43       	      (p10) br.cond.dpnt.few 290 <_Z6memCpyPvS_i+0x290>;;
+
+ 230:	09 00 00 00 01 00 	[MMI]       nop.m 0x0
+
+ 236:	e0 00 8c 00 20 00 	            ld1 r14=[r35]
+
+ 23c:	00 00 04 00       	            nop.i 0x0;;
+
+ 240:	11 00 38 28 80 11 	[MIB]       st1 [r20]=r14
+
+ 246:	00 00 00 02 00 04 	            nop.i 0x0
+
+ 24c:	50 00 00 43       	      (p08) br.cond.dpnt.few 290 <_Z6memCpyPvS_i+0x290>;;
+
+ 250:	09 00 00 00 01 00 	[MMI]       nop.m 0x0
+
+ 256:	e0 00 90 00 20 00 	            ld1 r14=[r36]
+
+ 25c:	00 00 04 00       	            nop.i 0x0;;
+
+ 260:	11 00 38 2c 80 11 	[MIB]       st1 [r22]=r14
+
+ 266:	00 00 00 02 00 03 	            nop.i 0x0
+
+ 26c:	30 00 00 43       	      (p06) br.cond.dpnt.few 290 <_Z6memCpyPvS_i+0x290>;;
+
+ 270:	09 00 00 00 01 00 	[MMI]       nop.m 0x0
+
+ 276:	e0 00 84 00 20 00 	            ld1 r14=[r33]
+
+ 27c:	00 00 04 00       	            nop.i 0x0;;
+
+ 280:	08 00 38 40 80 11 	[MMI]       st1 [r32]=r14
+
+ 286:	00 00 00 02 00 00 	            nop.m 0x0
+
+ 28c:	00 00 04 00       	            nop.i 0x0
+
+ 290:	10 00 00 00 01 00 	[MIB]       nop.m 0x0
+
+ 296:	00 10 04 55 00 80 	            mov.i ar.lc=r2
+
+ 29c:	08 00 84 00       	            br.ret.sptk.many b0
+
+ 2a0:	03 a0 50 00 08 20 	[MII]       addp4 r20=r20,r0
+
+ 2a6:	00 00 00 02 00 00 	            nop.i 0x0;;
+
+ 2ac:	40 09 aa 00       	            mov.i ar.lc=r20;;
+
+ 2b0:	08 00 00 00 01 00 	[MMI]       nop.m 0x0
+
+ 2b6:	00 00 00 02 00 00 	            nop.m 0x0
+
+ 2bc:	00 00 04 00       	            nop.i 0x0
+
+ 2c0:	09 70 00 42 00 10 	[MMI]       ld1 r14=[r33]
+
+ 2c6:	00 00 00 02 00 20 	            nop.m 0x0
+
+ 2cc:	14 08 01 84       	            adds r33=1,r33;;
+
+ 2d0:	11 00 38 40 80 11 	[MIB]       st1 [r32]=r14
+
+ 2d6:	00 0a 80 00 42 a0 	            adds r32=1,r32
+
+ 2dc:	f0 ff ff 48       	            br.cloop.sptk.few 2c0 <_Z6memCpyPvS_i+0x2c0>;;
+
+ 2e0:	10 00 00 00 01 00 	[MIB]       nop.m 0x0
+
+ 2e6:	00 10 04 55 00 80 	            mov.i ar.lc=r2
+
+ 2ec:	08 00 84 00       	            br.ret.sptk.many b0
+
+ 2f0:	11 70 00 38 00 10 	[MIB]       ld1 r14=[r28]
+
+ 2f6:	00 00 00 02 00 00 	            nop.i 0x0
+
+ 2fc:	d0 fe ff 48       	            br.few 1c0 <_Z6memCpyPvS_i+0x1c0>;;
